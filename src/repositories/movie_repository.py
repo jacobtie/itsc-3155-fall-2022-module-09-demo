@@ -35,7 +35,8 @@ def get_movie_repository():
             # Return the movie instance
             return movie
 
-        def clear_db(self):
+        def clear(self):
+            """Just for tests"""
             self._db = []
 
     # Singleton to be used in other modules

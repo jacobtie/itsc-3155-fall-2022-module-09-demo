@@ -4,7 +4,7 @@ mrs = movie_repository.get_movie_repository()
 
 
 def test_create_movie():
-    mrs.clear_db()
+    mrs.clear()
     movie = mrs.create_movie('Test Create Movie', 'Test Create Director', 3)
     movies = mrs.get_all_movies()
     assert len(movies) == 1
